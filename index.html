@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Code Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="editor-container">
+    <div class="sidebar">
+      <h2>Files</h2>
+      <ul>
+        <li><span>index.html</span></li>
+        <li><span>style.css</span></li>
+        <li><span>script.js</span></li>
+      </ul>
+    </div>
+    
+    <div class="editor-section">
+      <div class="tabs">
+        <button class="tab active" data-target="html-code">HTML</button>
+        <button class="tab" data-target="css-code">CSS</button>
+        <button class="tab" data-target="js-code">JavaScript</button>
+      </div>
+      
+      <textarea id="html-code" class="code-area active" placeholder="Write HTML here..."></textarea>
+      <textarea id="css-code" class="code-area" placeholder="Write CSS here..."></textarea>
+      <textarea id="js-code" class="code-area" placeholder="Write JavaScript here..."></textarea>
+      
+      <button id="run-button">Run Code</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
